@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Here are the figures!</h1>
+      <ul>
+
+          <% @figures.each do |fig| %>
+          <li><a href="/figures/<%= fig.id %>"><%= fig.name %></a></li>
+          <% end %>
+
+      </ul>
+
+  </body>
+</html>
